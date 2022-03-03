@@ -72,13 +72,13 @@ struct state {
   String sending_string;
 
   //ISD4000_1
-  String ISD4000_1 = "ISD4000_1 N/A";
+  String ISD4000_1 = "ISDPT,nan,nan,nan,00";
 
   //ISD4000_2
-  String ISD4000_2 = "ISD4000_2 N/A";
+  String ISD4000_2 = "ISDPT,nan,nan,nan,00";
 
   //ODM3
-  String ODM = "ODM N/A";
+  String ODM = "ISHPR,nan,nan,nan,00";
 
   //Transdoucer 1
   int transdoucer_1;
@@ -448,9 +448,9 @@ void loop(void)
     }
 
     //Reset sensor data
-    state.ISD4000_1 = "ISD4000_1 N/A";
-    state.ISD4000_2 = "ISD4000_2 N/A";
-    state.ODM = "ODM N/A";
+    state.ISD4000_1 = "ISDPT,nan,nan,nan,00";
+    state.ISD4000_2 = "ISDPT,nan,nan,nan,00";
+    state.ODM = "ISHPR,nan,nan,nan,00";
   }
   else {
     delay(10);
